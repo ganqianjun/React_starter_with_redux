@@ -8,7 +8,7 @@ class App extends Component {
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-md-offset-2">
-            <SearchBar />
+            <SearchBar testProps="From app - for test"/>
             <div>Hello React Starter!</div>
           </div>
         </div>

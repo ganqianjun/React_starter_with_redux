@@ -7,11 +7,15 @@ import React, { Component } from 'react';
 import './search_bar.css';
 
 class SearchBar extends Component {
+  // we need props as the params of 'constructor' and 'super'
+  // because we need to use 'this.props' in 'constructor'
+  // it won't affect we use 'this.props' out of 'constructor', like 'render'
   constructor(props) {
     super(props);
     this.state = {
       term: ''
     };
+    console.log(this.props.testProps);
   }
 
   render() {
