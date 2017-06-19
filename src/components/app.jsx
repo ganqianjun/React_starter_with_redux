@@ -5,9 +5,13 @@ class App extends Component {
   // the returned 'html' should be included within one tag
   render() {
     return (
-      <div>
-        <SearchBar />
-        <div>Hello React Starter!</div>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8 col-md-offset-2">
+            <SearchBar />
+            <div>Hello React Starter!</div>
+          </div>
+        </div>
       </div>
     )
   }

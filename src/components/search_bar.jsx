@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+
+// the reason that import css could work here is that
+// under 'webpack.config.js' we add CSS loader under rules
+// If we don't have webpack, we could just copy css file to public folder
+// and add it to index.html
 import './search_bar.css';
 
 class SearchBar extends Component {
@@ -12,8 +17,9 @@ class SearchBar extends Component {
   render() {
     // all the value comes from 'this.state'
     return (
-      <div>
-        <input
+      <div className="input-group search-bar">
+        <i className="input-group-addon  glyphicon glyphicon-search" aria-hidden="true"></i>
+        <input className="form-control"
           value = {this.state.term}
           onChange = {
             (e) => {
